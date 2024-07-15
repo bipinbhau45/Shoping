@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Filter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search products...">
+            <span class="search-icon">&#128269;</span> <!-- Unicode for the magnifying glass icon -->
+        </div>
+        <div class="buttons">
+            <button onclick="filterProducts('Men')">Men</button>
+            <button onclick="filterProducts('Women')">Women</button>
+            <button onclick="filterProducts('Kids')">Kids</button>
+        </div>
+        <div id="products"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
